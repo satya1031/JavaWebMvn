@@ -11,7 +11,7 @@ pipeline {
 
         stage('Clone Code') {
             steps {
-                git branch: 'main',
+                git branch: 'master',
                     credentialsId: 'gitcred',
                     url: 'https://github.com/satya1031/JavaWebMvn.git'
             }
