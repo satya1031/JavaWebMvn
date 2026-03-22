@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        IMAGE_NAME = "satya1031/hotel-restaurant"
+        IMAGE_NAME = "satya1031/javawebmvn"
         IMAGE_TAG = "${BUILD_NUMBER}"
         DOCKERHUB_CREDENTIALS = "dockerhub"
     }
@@ -75,7 +75,7 @@ pipeline {
 
     post {
         success {
-            echo "✅ hotel-restaurant deployed successfully!"
+            echo "✅ javawebmvn deployed successfully!"
         }
         failure {
             echo "❌ Pipeline failed!"
